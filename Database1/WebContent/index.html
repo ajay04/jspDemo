@@ -1,0 +1,128 @@
+<html>
+<head>
+<title></title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#Registration').modal('show');
+    });
+    
+   
+    
+</script>
+<style>
+         body
+         {
+             background-image: url("images/img1.jpg");
+             -moz-background-size: cover;
+             -webkit-background-size: cover;
+             background-size: cover;
+             background-position: top center !important;
+             background-repeat: no-repeat !important;
+             background-attachment: fixed;
+         }
+        </style>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="modal fade" id="Registration" role="dialog">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            
+                            <center> <b> <h4 class="modal-title">Connect To DataBase </h4></b> </center>
+                        </div>
+                        <div class="modal-body" style = "background-color:#E0FFFF;">
+
+
+                            <center>
+
+                                <div style= "margin-top:1px;">
+                                    <form style="align:center;" id ="register_form" method="POST" action="display.jsp">
+
+                                        <table cellspacing = "5" cellpadding = "5">
+
+                                            <tr>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Username:</td>
+                                                <td><input type="text" autofocus="autofocus" id="uname" name="uname" value="" class="form-control" placeholder="Enter username"></td>
+                                                <td style="color:red;"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Password:</td>
+                                                <td><input type="password" id="password" name="password" value="" class="form-control" placeholder="Enter Password"></td>
+                                <td style="color:red;"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>IP Address:</td>
+                                                <td><input type="text" id="ip" name="ip" value="" class="form-control" placeholder="Enter IP Address"></td>
+                                                <td style="color:red;"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </td>
+                                            </tr>
+											
+											<tr>
+                                                <td>Port No:</td>
+                                                <td><input type="text" autofocus="autofocus" id="port" name="port" value="" class="form-control" placeholder="Enter Port no"></td>
+                                                <td style="color:red;"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="6" align="center"><input type="Submit" id="register"  name="register" value="Connect" class="btn btn-success" ></td>
+                                            </tr>
+
+                                        </table>
+                                        
+                                    </form>
+                                </div>
+                            </center>
+
+                        </div>
+                        <div class="modal-footer">
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+	</div>
+</body>
+</html>
